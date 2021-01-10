@@ -1,13 +1,11 @@
 import Axios from "axios";
-import {API_URL} from "../Enum/EnvironmentVariable";
+import {API_URL, URL_ROOM_STARTED} from "../Enum/EnvironmentVariable";
 import {RoomConnection} from "./RoomConnection";
 import {OnConnectInterface, PositionInterface, ViewportInterface} from "./ConnexionModels";
 import {GameConnexionTypes, urlManager} from "../Url/UrlManager";
 import {localUserStore} from "./LocalUserStore";
 import {LocalUser} from "./LocalUser";
 import {Room} from "./Room";
-
-const URL_ROOM_STARTED = '/Floor0/floor0.json';
 
 class ConnectionManager {
     private localUser!:LocalUser;
